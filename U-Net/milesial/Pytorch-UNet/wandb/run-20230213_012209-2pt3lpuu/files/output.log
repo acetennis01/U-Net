@@ -1,0 +1,22 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   2463
+        Validation size: 273
+        Checkpoints:     True
+        Device:          cpu
+        Images scaling:  0.5
+        Mixed Precision: True
+Traceback (most recent call last):
+  File "train.py", line 216, in <module>
+    train_model(
+  File "train.py", line 81, in train_model
+    optimizer = optim.RMSprop(model.parameters(),
+TypeError: __init__() got an unexpected keyword argument 'foreach'
+Traceback (most recent call last):
+  File "train.py", line 216, in <module>
+    train_model(
+  File "train.py", line 81, in train_model
+    optimizer = optim.RMSprop(model.parameters(),
+TypeError: __init__() got an unexpected keyword argument 'foreach'

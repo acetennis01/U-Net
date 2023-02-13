@@ -1,0 +1,32 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   4580
+        Validation size: 508
+        Checkpoints:     True
+        Device:          cpu
+        Images scaling:  0.5
+        Mixed Precision: True
+Traceback (most recent call last):
+  File "train.py", line 212, in <module>
+    train_model(
+  File "train.py", line 77, in train_model
+    optimizer = optim.RMSprop(model.parameters(),
+TypeError: __init__() got an unexpected keyword argument 'foreach'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "train.py", line 222, in <module>
+    except torch.cuda.OutOfMemoryError:
+AttributeError: module 'torch.cuda' has no attribute 'OutOfMemoryError'
+Traceback (most recent call last):
+  File "train.py", line 212, in <module>
+    train_model(
+  File "train.py", line 77, in train_model
+    optimizer = optim.RMSprop(model.parameters(),
+TypeError: __init__() got an unexpected keyword argument 'foreach'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "train.py", line 222, in <module>
+    except torch.cuda.OutOfMemoryError:
+AttributeError: module 'torch.cuda' has no attribute 'OutOfMemoryError'

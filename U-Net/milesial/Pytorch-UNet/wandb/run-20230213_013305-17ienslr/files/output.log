@@ -1,0 +1,23 @@
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   2463
+        Validation size: 273
+        Checkpoints:     True
+        Device:          cpu
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/5:   0%|                                                                                                                                                                             | 0/2463 [00:01<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 221, in <module>
+    train_model(
+  File "train.py", line 109, in train_model
+    with torch.autocast(device=device, enabled=amp):
+TypeError: __init__() got an unexpected keyword argument 'device'
+Traceback (most recent call last):
+  File "train.py", line 221, in <module>
+    train_model(
+  File "train.py", line 109, in train_model
+    with torch.autocast(device=device, enabled=amp):
+TypeError: __init__() got an unexpected keyword argument 'device'
